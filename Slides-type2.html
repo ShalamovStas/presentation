@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(even) {
+  color: white;
+  background: black;
+}
+
+section:nth-of-type(odd) {
+  color: black;
+  background: white;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 4rem;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+svg {
+  height: 1em;
+  top: 0.2em;
+  position: relative;
+}
+
+.step {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.step .content-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+.step .about {
+  text-align: left;
+  text-transform: uppercase;
+}
+.step .blur-inactive {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  transition: opacity 1.5s ease-out;
+  opacity: 0.8;
+  z-index: 1;
+}
+.step.present .blur-inactive {
+  opacity: 0;
+}
+
+.step-1 .title-wrap {
+  color: #ffffff;
+  z-index: 1;
+}
+.step-1 .title-wrap .main-title {
+  text-transform: uppercase;
+  font-size: 5vw;
+  margin-top: 25vh;
+  margin-bottom: 30vh;
+}
+.step-1 .title-wrap .sub-title {
+  font-size: 2em;
+  text-align: right;
+}
+.step-1 .blur-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff75;
+}
+
+.location {
+  color: #578464;
+  background-color: #bae2c5;
+}
+.location .europe-map {
+  width: 100vw;
+  margin-top: 10vh;
+}
+.location .header {
+  color: #578464;
+  font-weight: 600;
+  font-size: 5vw;
+  margin: 0px;
+}
+.location .info {
+  font-size: 24px;
+  color: #706f6f;
+  text-align: left;
+}
+.location .info:first-of-type {
+  margin-top: 50vh;
+}
+
+/*# sourceMappingURL=presentation.css.map */
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="title" class="step title step-1" data-x="0" data-y="0">
+            <div class="blur-inactive"></div>
+            <video id="myVideo" style="width: 100%;" width="400" autoplay controls loop autoplay="true" muted="muted">
+                <source src="video/introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content-wrap">
+                <div class="title-wrap">
+                    <h1 class="main-title">Tour through Kharkiv</h1>
+                    <h4 class="sub-title">Stories & Cityscapes</h4>
+                    <h4 class="sub-title">Created by Stas for Rimscout team</h4>
+                </div>
+            </div>
+
+            <div class="blur-wrap"></div>
+        </div>
+      </section>
+      <section>
+        <h1>slide 2</h1>
+      </section>
+      <section>
+        <h1>slide 3</h1>
+      </section>
+      <section>
+        <h1>slide 4</h1>
+      </section>
+      <section>
+        <h1>slide 5</h1>
+      </section>
+</body>
+</html>

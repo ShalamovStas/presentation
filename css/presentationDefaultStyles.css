@@ -1,0 +1,76 @@
+/*
+  A common approach is to use googleapis.com to generate css for the webfonts you want to use.
+  The downside of this approach is that you have to be online. So below I have simply saved
+  the output of the googleapis url into a file. Then you of course also have to make sure
+  the webfonts are locally installed to make offline usage work. For Ubuntu (or Debian) I
+  successfully used the script from here to do that: 
+  http://www.webupd8.org/2011/01/automatically-install-all-google-web.html
+*/
+
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic); */
+@import url(fonts.css);
+
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+
+    background: white;
+    background-color: white;
+
+}
+
+/*
+    Now let's style the presentation steps.
+*/
+
+
+
+
+
+
+h1, 
+h2, 
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+li {
+    margin: 0.2em;
+}
+
+a {
+    color: inherit;
+}
+
+blockquote {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;    
+}
+
+em {
+    /*text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);*/
+    text-shadow: 2px 1px 1px rgba(155, 155, 155, 1);
+}
+
+strong {
+    /*text-shadow: 2px 1px 1px rgba(0, 0, 0, 1);*/
+    text-shadow: 2px 1px 1px rgba(155, 155, 155, 1);
+}
+
+q {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;    
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+strike {
+    opacity: 0.7;
+}

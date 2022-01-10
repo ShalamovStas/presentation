@@ -1,0 +1,143 @@
+$color-dark-green: #578464;
+$color-dark-gray: #706f6f;
+
+$color-step2-primary: #578464;
+
+body {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+svg {
+  height: 1em;
+  top: 0.2em;
+  position: relative;
+}
+
+.left-bar {
+  .content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .font-1 {
+      color: $color-step2-primary;
+      font-size: 12vw;
+    }
+  }
+}
+
+.step {
+  color: $color-step2-primary;
+
+  display: block;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  box-sizing: border-box;
+
+  .content-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+  }
+
+  .about {
+    text-align: left;
+    text-transform: uppercase;
+    svg {
+    }
+  }
+}
+
+.step {
+  .blur-inactive {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    transition: opacity 1.5s ease-out;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  &.present {
+    .blur-inactive {
+      opacity: 0;
+    }
+  }
+}
+
+.step-1 {
+  .title-wrap {
+    color: #ffffff;
+    z-index: 1;
+    .main-title {
+      text-transform: uppercase;
+      font-size: 5vw;
+      margin-top: 25vh;
+      margin-bottom: 30vh;
+    }
+
+    .sub-title {
+      font-size: 2em;
+      text-align: right;
+    }
+  }
+
+  .blur-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff75;
+  }
+}
+
+.slide-left-text {
+  background-color: #bae2c5;
+  .europe-map {
+    width: 100vw;
+    margin-top: 10vh;
+  }
+
+  .header {
+    color: $color-dark-green;
+    font-weight: 600;
+    font-size: 5vw;
+    margin: 0px;
+  }
+
+  .info {
+    font-size: 24px;
+    color: $color-dark-gray;
+    text-align: left;
+    &:first-of-type {
+      margin-top: 50vh;
+    }
+  }
+}
+
+.lviv-historic-map {
+  height: 100%;
+  width: auto;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+}
+
+.historic-map--backgrount {
+  background-color: #d9e2ec;
+}
+
+.step-4 {
+  .info:first-of-type {
+    margin-top: 64vh;
+  }
+}

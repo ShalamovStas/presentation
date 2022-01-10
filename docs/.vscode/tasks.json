@@ -5,7 +5,11 @@
             "label": "Sass Compile",
             "type": "shell",
             "command": "sass scss/presentation.scss css/presentation.css",
-            "group": "build"
-          }
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
     ]
 }

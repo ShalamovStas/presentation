@@ -19,10 +19,86 @@ svg {
     align-items: center;
     justify-content: center;
 
-    .font-1 {
-      color: $color-step2-primary;
-      font-size: 12vw;
+    .font {
+      color: #d9e2ec;
+
+      &--type1 {
+        font-size: 8vw;
+        color: #d5dfe9;
+      }
+
+      &--type2 {
+        font-size: 3vw;
+        color: #d9e2ec;
+      }
     }
+  }
+}
+
+#ukraine-views {
+  width: auto;
+  position: relative;
+  top: -15vh;
+  height: 130vh;
+}
+
+.text-color--awesome {
+  animation:colorchange 20s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    
+    color: rgb(103, 161, 236);
+  }
+  
+  10% {
+    
+    color: #ffffff;
+  }
+  
+  20% {
+    
+    color: #1abc9c;
+  }
+  
+  30% {
+    
+    color: #c2b5ad;
+  }
+  
+  40% {
+    
+    color: rgb(96, 143, 151);
+  }
+  
+  50% {
+    
+    color: #34495e;
+  }
+  
+  60% {
+    
+    color: rgb(138, 138, 155);
+  }
+  
+  70% {
+    
+    color: #2980b9;
+  }
+  80% {
+ 
+    color: #928654;
+  }
+  
+  90% {
+ 
+    color: #2980b9;
+  }
+  
+  100% {
+    
+    color: rgb(163, 149, 152);
   }
 }
 
@@ -62,18 +138,89 @@ svg {
     right: 0;
     background-color: #ffffff;
     transition: opacity 1.5s ease-out;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 1;
   }
+
+  .ukraine-views {
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 1;
+    z-index: 1;
+
+    &--video-blur-1 {
+      top: 950px;
+      bottom: -195px;
+      left: 0px;
+      right: -555px;
+    }
+    &--video-blur-2 {
+      top: -153px;
+      bottom: -75px;
+      left: 1926px;
+      right: -575px;
+    }
+    &--video-blur-3 {
+      top: -153px;
+      bottom: 950px;
+      left: -26px;
+      right: -575px;
+    }
+  }
+
+  // #ukraine-views--video-blur-1{
+  //   position: absolute;
+  //   top: 928px;
+  //   bottom: -195px;
+  //   left: 0px;
+  //   right: -555px;
+  //   background-color: #ffffff;
+  //   opacity: 1;
+  //   z-index: 1;
+  // }
+
+  // #ukraine-views--video-blur-2{
+  //   position: absolute;
+  //   top: -153px;
+  //   bottom: -75px;
+  //   left: 1644px;
+  //   right: -575px;
+  //   background-color: #ffffff;
+  //   opacity: 1;
+  //   z-index: 1;
+  // }
+
+  // #ukraine-views--video-blur-3{
+  //   position: absolute;
+  //   top: -153px;
+  //   bottom: 942px;
+  //   left: -26px;
+  //   right: -575px;
+  //   background-color: #ffffff;
+  //   opacity: 1;
+  //   z-index: 1;
+  // }
 
   &.present {
     .blur-inactive {
       opacity: 0;
     }
+    #ukraine-views--video-blur {
+      opacity: 0;
+    }
   }
 }
 
-.step-1 {
+.video-blur--wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff75;
+}
+
+.tour-throughg-kh-first-slide {
   .title-wrap {
     color: #ffffff;
     z-index: 1;
@@ -88,15 +235,6 @@ svg {
       font-size: 2em;
       text-align: right;
     }
-  }
-
-  .blur-wrap {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff75;
   }
 }
 
@@ -132,12 +270,19 @@ svg {
   right: 0;
 }
 
-.historic-map--backgrount {
+.historic-slides {
   background-color: #d9e2ec;
+
+  .info {
+    width: 35vw;
+
+    &:first-of-type {
+      margin-top: 64vh;
+    }
+  }
 }
 
-.step-4 {
-  .info:first-of-type {
-    margin-top: 64vh;
-  }
+.kh-during-revolution-img{
+  height: 100vh;
+
 }

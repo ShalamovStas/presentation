@@ -33,42 +33,39 @@
     <!-- ------------------SLIDES------------------ -->
     <div id="impress" data-transition-duration="500">
 
+
+
+
         <!-- ------------------link 1------------------ -->
-        <div id="link-1" class="step skip left-bar" data-x="-2000" data-y="0">
-            <div class="content-wrap">
-                <h1 class="font-1">Introduction</h1>
-            </div>
-        </div>
-
-
-
-
-
-
-        <!-- ------------------slide 1.1------------------ -->
-        <div id="title" class="step title step-1" data-x="0" data-y="0">
+        <div id="link-1" class="step left-bar" data-x="-2500" data-y="0">
             <div class="blur-inactive"></div>
-            <video id="myVideo" style="width: 100%;" width="400" autoplay controls loop autoplay="true" muted="muted">
-                <source src="video/introduction.mp4" type="video/mp4">
+            <video id="ukraine-views" width="400" autoplay controls loop autoplay="true" muted="muted">
+                <source src="video/ukraine-views.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="content-wrap">
-                <div class="title-wrap">
-                    <h1 class="main-title">Tour through Kharkiv</h1>
-                    <h4 class="sub-title">Stories & Cityscapes</h4>
-                    <h4 class="sub-title">Created by Stas for Rimscout team</h4>
+            <div class="ukraine-views ukraine-views--video-blur-1"></div>
+            <div class="ukraine-views ukraine-views--video-blur-2"></div>
+            <div class="ukraine-views ukraine-views--video-blur-3"></div>
+            <div class="content-wrap ">
+                <div style="z-index: 100;">
+                    <h1 class="font--type1 text-color--awesome">
+                        
+                        INTRODUCTION</h1>
+                    <h1 class="font--type2 text-color--awesome">
+                        <span><svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M20,11H23V13H20V11M1,11H4V13H1V11M13,1V4H11V1H13M4.92,3.5L7.05,5.64L5.63,7.05L3.5,4.93L4.92,3.5M16.95,5.63L19.07,3.5L20.5,4.93L18.37,7.05L16.95,5.63M12,6A6,6 0 0,1 18,12C18,14.22 16.79,16.16 15,17.2V19A1,1 0 0,1 14,20H10A1,1 0 0,1 9,19V17.2C7.21,16.16 6,14.22 6,12A6,6 0 0,1 12,6M14,21V22A1,1 0 0,1 13,23H11A1,1 0 0,1 10,22V21H14M11,18H13V15.87C14.73,15.43 16,13.86 16,12A4,4 0 0,0 12,8A4,4 0 0,0 8,12C8,13.86 9.27,15.43 11,15.87V18Z" />
+                        </svg></span>
+                        At least a couple of words about us & our country</h1>
+
                 </div>
             </div>
+            <div class="video-blur--wrap"></div>
 
-            <div class="blur-wrap"></div>
         </div>
-
-
-
 
 
         <!-- ------------------slide 1.2------------------ -->
-        <div id="Kharkiv-location" class="step step-2 slide-left-text" data-x="2000" data-y="0" data-y="0">
+        <div id="Kharkiv-location" class="step step-2 slide-left-text" data-x="0" data-y="0" data-y="0">
             <div class="blur-inactive"></div>
 
             <div class="content-wrap">
@@ -105,7 +102,7 @@
 
 
         <!-- ------------------slide 1.3------------------ -->
-        <div id="Lviv-location" class="step step-3 slide-left-text" data-x="4000" data-y="0" data-y="0">
+        <div id="Lviv-location" class="step step-3 slide-left-text" data-x="2000" data-y="0" data-y="0">
             <div class="blur-inactive"></div>
 
             <div class="content-wrap">
@@ -152,9 +149,9 @@
 
 
 
-        <div id="link-2" class="step skip left-bar" data-x="-2000" data-y="2000">
+        <div id="link-2" class="step left-bar" data-x="-2500" data-y="2000">
             <div class="content-wrap">
-                <h1 class="font-1">Historical context</h1>
+                <h1 class="font--type1">Historical context</h1>
             </div>
         </div>
 
@@ -164,15 +161,16 @@
 
 
         <!-- ------------------slide 4------------------ -->
-        <div id="Lviv-history-1" class="step step-4 slide-left-text historic-map--backgrount" data-x="0" data-y="2000">
+        <div id="Lviv-history-1" class="step step-4 slide-left-text historic-slides" data-x="0" data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -196,15 +194,17 @@
 
 
         <!-- ------------------slide 5------------------ -->
-        <div id="Lviv-history-2" class="step step-5 slide-left-text historic-map--backgrount" data-x="2000" data-y="2000">
+        <div id="Lviv-history-2" class="step step-5 slide-left-text historic-slides" data-x="2000"
+            data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history-2.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -222,15 +222,17 @@
 
 
         <!-- ------------------slide 6------------------ -->
-        <div id="Lviv-history-3" class="step step-6 slide-left-text historic-map--backgrount" data-x="4000" data-y="2000">
+        <div id="Lviv-history-3" class="step step-6 slide-left-text historic-slides" data-x="4000"
+            data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history-3.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -245,15 +247,17 @@
 
 
         <!-- ------------------slide 7------------------ -->
-        <div id="Lviv-history-4" class="step step-7 slide-left-text historic-map--backgrount" data-x="6000" data-y="2000">
+        <div id="Lviv-history-4" class="step step-7 slide-left-text historic-slides" data-x="6000"
+            data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history-4.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -267,17 +271,19 @@
         </div>
 
 
-        
+
         <!-- ------------------slide 8------------------ -->
-        <div id="Lviv-history-5" class="step step-8 slide-left-text historic-map--backgrount" data-x="8000" data-y="2000">
+        <div id="Lviv-history-5" class="step step-8 slide-left-text historic-slides" data-x="8000"
+            data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history-6.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -285,7 +291,7 @@
                     <span><svg viewBox="0 0 24 24">
                             <path fill="currentColor" d="M12,1L9,9L1,12L9,15L12,23L15,15L23,12L15,9L12,1Z" />
                         </svg></span>
-                    Our common page
+                    Union of Soviet Socialist Republics (USSR)
                 </h3>
             </div>
         </div>
@@ -294,15 +300,17 @@
 
 
         <!-- ------------------slide 9------------------ -->
-        <div id="Lviv-history-6" class="step step-9 slide-left-text historic-map--backgrount" data-x="10000" data-y="2000">
+        <div id="Lviv-history-6" class="step step-9 slide-left-text historic-slides" data-x="10000"
+            data-y="2000">
             <div class="blur-inactive"></div>
             <img class="lviv-historic-map" src="./img/Lviv-history-5.png" alt="">
 
             <div class="content-wrap">
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                    </svg>
+                            <path fill="currentColor"
+                                d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                        </svg>
                     </span>
                     <span>History</span>
                 </p>
@@ -314,6 +322,58 @@
                 </h3>
             </div>
         </div>
+
+
+
+
+
+        <!-- ABOUT KH-------------- -->
+        <div id="kharkiv-intro" class="step tour-throughg-kh-first-slide title step-10" data-x="-2500" data-y="4000">
+            <div class="blur-inactive"></div>
+            <video id="myVideo" style="width: 100%;" width="400" autoplay controls loop autoplay="true" muted="muted">
+                <source src="video/introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content-wrap">
+                <div class="title-wrap">
+                    <h1 class="main-title">Tour through Kharkiv</h1>
+                    <h4 class="sub-title">Stories & Cityscapes</h4>
+                    <h4 class="sub-title">Created by Stas for Rimscout team</h4>
+                </div>
+            </div>
+
+            <div class="video-blur--wrap"></div>
+        </div>
+
+
+
+        <div id="kh-in-revolution" class="step step-11" data-x="0" data-y="4000">
+            <div class="blur-inactive"></div>
+            <img class="kh-during-revolution-img" src="./img/kh-and-revolution.png" alt="">
+
+            <div class="content-wrap">
+                
+            </div>
+        </div>
+
+
+        <div id="kh-as-a-first-capital" class="step step-12" data-x="2000" data-y="4000">
+            <div class="blur-inactive"></div>
+            <img class="kh-during-revolution-img" src="./img/first-capital.png" alt="">
+
+            <div class="content-wrap">
+                
+            </div>
+        </div>
+
+
+
+        <!-- <div id="" class="step " data-x="" data-y="">
+            <div class="blur-inactive"></div>
+            <div class="content-wrap">
+            </div>
+        </div> -->
+
 
 
 
@@ -341,6 +401,10 @@
     <script type="text/javascript" src="js/impress.js"></script>
     <script>
         impress().init();
+
+        setTimeout(() => {
+            document.getElementById('ukraine-views').playbackRate = 2.0;
+        }, 2000);
     </script>
 </body>
 

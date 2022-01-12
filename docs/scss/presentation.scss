@@ -38,66 +38,54 @@ svg {
 #ukraine-views {
   width: auto;
   position: relative;
-  top: -15vh;
   height: 130vh;
 }
 
 .text-color--awesome {
-  animation:colorchange 20s infinite alternate;
+  animation: colorchange 20s infinite alternate;
 }
 
 @keyframes colorchange {
   0% {
-    
     color: rgb(103, 161, 236);
   }
-  
+
   10% {
-    
     color: #ffffff;
   }
-  
+
   20% {
-    
     color: #1abc9c;
   }
-  
+
   30% {
-    
     color: #c2b5ad;
   }
-  
+
   40% {
-    
     color: rgb(96, 143, 151);
   }
-  
+
   50% {
-    
     color: #34495e;
   }
-  
+
   60% {
-    
     color: rgb(138, 138, 155);
   }
-  
+
   70% {
-    
     color: #2980b9;
   }
   80% {
- 
     color: #928654;
   }
-  
+
   90% {
- 
     color: #2980b9;
   }
-  
+
   100% {
-    
     color: rgb(163, 149, 152);
   }
 }
@@ -105,12 +93,12 @@ svg {
 .step {
   color: $color-step2-primary;
 
-  display: block;
-
   width: 100vw;
   height: 100vh;
   padding: 0px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 
   .content-wrap {
     position: absolute;
@@ -121,9 +109,45 @@ svg {
     padding: 15px;
   }
 
+  .slide-hint-wrap {
+    z-index: 1000;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+
+    svg {
+      height: 40px;
+    }
+
+    .slide-hint {
+      position: absolute;
+      background-color: #ffffffe1;
+      color: #4b4b4b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      width: fit-content;
+      display: none;
+      z-index: 1000;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: max-content;
+      white-space: pre-line;
+    }
+
+    &:hover {
+      .slide-hint {
+        display: block;
+      }
+    }
+  }
+
   .about {
     text-align: left;
     text-transform: uppercase;
+
     svg {
     }
   }
@@ -253,6 +277,6 @@ svg {
   }
 }
 
-.kh-during-revolution-img{
+.kh-during-revolution-img {
   width: 100vw;
 }

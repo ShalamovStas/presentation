@@ -30,11 +30,13 @@
         <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
+    <div class="disable-presentation-overlay hidden disable-presentation-overlay-js">
+        <span>Please, use page zoom = 100%;</span>
+        <span id="current-zoom-value"></span>
+    </div>
+
     <!-- ------------------SLIDES------------------ -->
     <div id="impress" data-transition-duration="500">
-
-
-
 
         <!-- ------------------link 1------------------ -->
         <div id="link-1" class="step left-bar" data-x="-2500" data-y="0">
@@ -71,14 +73,26 @@
             <div class="blur-inactive"></div>
 
             <div class="content-wrap">
-                <p class="about">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        About Kharkiv:
+                        - located in the northeast of the country
+                        - the largest city of the region
+                        - the largest city of the region
+                    </div>
+                </div>
+                <div class="about">
                     <span><svg style="height:1em" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M3.05,13H1V11H3.05C3.5,6.83 6.83,3.5 11,3.05V1H13V3.05C17.17,3.5 20.5,6.83 20.95,11H23V13H20.95C20.5,17.17 17.17,20.5 13,20.95V23H11V20.95C6.83,20.5 3.5,17.17 3.05,13M12,5A7,7 0 0,0 5,12A7,7 0 0,0 12,19A7,7 0 0,0 19,12A7,7 0 0,0 12,5Z" />
                         </svg>
                     </span>
                     <span>Geography</span>
-                </p>
+                </div>
                 <h2 class="header">
                     Kharkiv
                 </h2>
@@ -108,6 +122,18 @@
             <div class="blur-inactive"></div>
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        About Lviv:
+
+                        - the largest city in western Ukraine
+                        - one of the main cultural centres
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="height:1em" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -168,6 +194,20 @@
             <img class="lviv-historic-map" src="./img/Lviv-history.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        History note:
+
+                        - Lviv is completely different from Kharkiv:
+                        completely different historical background
+
+                        - Lviv as a part of Poland and Austro-Hungarian empire
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -201,6 +241,21 @@
             <img class="lviv-historic-map" src="./img/Lviv-history-2.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        History note:
+
+                        - Lviv after the First World War: became a part of Poland.
+                        - Kharkiv in the Russian Civil War.
+
+                        The Russian monarchy had been overthrown by the 1917 February Revolution
+                        Russia was in a state of political flux
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -228,6 +283,18 @@
             <img class="lviv-historic-map" src="./img/Lviv-history-3.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        History note:
+
+                        - The last Civil War battle was in November 1920.
+                        - End of the Civil War.
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -252,6 +319,18 @@
             <img class="lviv-historic-map" src="./img/Lviv-history-4.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        History note:
+
+                        - The USSR annexed the eastern half of the Second Polish Republic with Ukrainian population.
+                        - Lviv became the capital of the newly formed Oblast.
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -277,6 +356,17 @@
             <img class="lviv-historic-map" src="./img/Lviv-history-6.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        History note:
+
+                        - After the Second World War Lviv was a part of USSR.
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -303,6 +393,16 @@
             <img class="lviv-historic-map" src="./img/Lviv-history-5.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        Now there are at least two parts of Ukraine with
+                        completely different historic background.
+                    </div>
+                </div>
                 <p class="about">
                     <span><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor"
@@ -332,6 +432,7 @@
                 Your browser does not support the video tag.
             </video>
             <div class="content-wrap">
+
                 <div class="title-wrap">
                     <h1 class="main-title">Tour through Kharkiv</h1>
                     <h4 class="sub-title">Stories & Cityscapes</h4>
@@ -349,7 +450,22 @@
             <img class="width-100" src="./img/kh-and-revolution.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        RUSSIAN CIVIL WAR & REVOLUTION
 
+                        Reasons:
+                        - outdated economy
+                        - oppression by the regime
+                        - autocratic system was bad
+
+                        Murderings, blood and fear during this period
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -359,7 +475,18 @@
             <img class="width-100" src="./img/first-capital.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        'TO PASS BEYOND ...'
 
+                        - The Restoration Economy
+                        - New live approach, new ambitions
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -369,6 +496,18 @@
             <img class="width-100" src="./img/kh-ussr-photos.png" alt="">
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        GREAT CONSTRUCTION PROJECTS OF COMMUNISM
+
+                        - is a phrase that used to identify a series of the most ambitious construction projects
+                        and had great importance for the economy of the Soviet Union.
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -377,6 +516,23 @@
             <img class="width-100" src="./img/kh-plants.png" alt="">
 
             <div class="content-wrap">
+                <div class="content-wrap">
+                    <div class="slide-hint-wrap">
+                        <svg class="text-color--awesome" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                        </svg>
+                        <div class="slide-hint">
+                            INDUSTRIALIZATION IN THE SOVIET UNION 
+
+    
+                            - process of accelerated building-up of the industrial potential of the Soviet Union
+                            - industrialisation was considered a great feat
+                            
+                            - lots of people has been involved
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -389,6 +545,20 @@
             </video>
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        INDUSTRIALIZATION IN THE SOVIET UNION 
+
+
+                        - typical city district next to the giant factory
+
+                        - One example: Kharkiv Tractor Plant is a agricultural machinery manufacturer 
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -403,19 +573,17 @@
             </video>
 
             <div class="content-wrap">
-            </div>
-        </div>
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        FROM HIGH UP IN THE SKY
 
-
-        <div id="saltovka-1" class="step step-15" data-x="12000" data-y="4000">
-            <div id="blur-play-video-saltovka-1" class="blur-inactive"></div>
-            <video id="video-saltovka-1" style="width: 100%;" width="400" autoplay controls loop autoplay="true"
-                muted="muted">
-                <source src="video/saltovka-1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <div class="content-wrap">
+                        - Kharkiv Tractor Plant city district
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -428,19 +596,37 @@
             </video>
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        Kharkiv city district built during 1970s - `85s.
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <div id="old-and-new-saltovka" class="step step-17" data-x="16000" data-y="4000">
             <div id="blur-play-video-old-and-new-saltovka" class="blur-inactive"></div>
-            <video id="video-old-and-new-saltovka" style="width: 100%;" width="400" autoplay controls loop autoplay="true"
-                muted="muted">
+            <video id="video-old-and-new-saltovka" style="width: 100%;" width="400" autoplay controls loop
+                autoplay="true" muted="muted">
                 <source src="video/old-and-new-saltovka.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        The video from 1975. And how it looks now.
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -453,6 +639,45 @@
             </video>
 
             <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        In my view, Kharkiv has an interesting history.
+                        We can find lots of the stories and taste the 'wind of time' here.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="new-year-celebration" class="step step-19" data-x="20000" data-y="4000">
+            <div id="blur-play-new-year-celebration" class="blur-inactive"></div>
+            <video id="video-new-year-celebration" style="width: 100%;" width="400" autoplay controls loop
+                autoplay="true" muted="muted">
+                <source src="video/new-year.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="content-wrap">
+                <div class="slide-hint-wrap">
+                    <svg class="text-color--awesome" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <div class="slide-hint">
+                        Everybody like holidays.
+                        It is a perfect time to make a change for the better.
+
+                        Every moment is a fresh beginning.
+                        
+                        
+                        With the best regards, ...
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -486,7 +711,7 @@
 
 
 
-        <div id="overview" class="step" data-x="5000" data-y="2000" data-scale="15" style="pointer-events: none;">
+        <div id="overview" class="step" data-x="10000" data-y="4000" data-scale="20" style="pointer-events: none;">
         </div>
     </div>
 
@@ -498,7 +723,29 @@
 
     <script type="text/javascript" src="js/impress.js"></script>
     <script>
-        impress().init();
+
+        window.visualViewport.addEventListener("resize", viewportHandler);
+
+        function viewportHandler() {
+            let pageZoom = window.devicePixelRatio;
+
+            let overlay = document.getElementsByClassName('disable-presentation-overlay-js')[0];
+
+            if (pageZoom !== 1) {
+                if (overlay)
+                    overlay.classList.remove('hidden');
+
+                document.getElementById('current-zoom-value').innerHTML = `Current value: ${pageZoom * 100}%`;
+                return;
+            }
+
+            impress().init();
+            if (overlay)
+                overlay.classList.add('hidden');
+
+        }
+
+        viewportHandler();
 
         function addEventListenersForVideos(videoIDs) {
             setTimeout(() => {
@@ -517,7 +764,6 @@
         setTimeout(() => {
             document.getElementById('ukraine-views').playbackRate = 2.0;
             document.getElementById('htz-from-height').playbackRate = 2.5;
-            document.getElementById('video-saltovka-1').playbackRate = 1.3;
             document.getElementById('video-saltovka-2').playbackRate = 1.5;
             document.getElementById('video-city-center-1').playbackRate = 2.0;
         }, 2000);
@@ -525,9 +771,10 @@
         addEventListenersForVideos([
             { containerId: 'play-video-click-js-1', videoId: 'htz-from-height' },
             { containerId: 'azW9nEzSb-container', videoId: 'azW9nEzSb' },
-            { containerId: 'blur-play-video-saltovka-1', videoId: 'video-saltovka-1' },
             { containerId: 'blur-play-video-saltovka-2', videoId: 'video-saltovka-2' },
-            { containerId: 'blur-play-city-center-1', videoId: 'video-city-center-1' }
+            { containerId: 'blur-play-video-old-and-new-saltovka', videoId: 'video-old-and-new-saltovka' },
+            { containerId: 'blur-play-city-center-1', videoId: 'video-city-center-1' },
+            { containerId: 'blur-play-new-year-celebration', videoId: 'video-new-year-celebration' }
         ]);
 
 

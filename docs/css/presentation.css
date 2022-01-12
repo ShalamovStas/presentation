@@ -28,7 +28,6 @@ svg {
 #ukraine-views {
   width: auto;
   position: relative;
-  top: -15vh;
   height: 130vh;
 }
 
@@ -73,11 +72,12 @@ svg {
 }
 .step {
   color: #578464;
-  display: block;
   width: 100vw;
   height: 100vh;
   padding: 0px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .step .content-wrap {
   position: absolute;
@@ -86,6 +86,35 @@ svg {
   bottom: 0;
   left: 0;
   padding: 15px;
+}
+.step .slide-hint-wrap {
+  z-index: 1000;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  cursor: pointer;
+}
+.step .slide-hint-wrap svg {
+  height: 40px;
+}
+.step .slide-hint-wrap .slide-hint {
+  position: absolute;
+  background-color: #ffffffe1;
+  color: #4b4b4b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: fit-content;
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: max-content;
+  white-space: pre-line;
+}
+.step .slide-hint-wrap:hover .slide-hint {
+  display: block;
 }
 .step .about {
   text-align: left;

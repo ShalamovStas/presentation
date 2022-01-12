@@ -127,6 +127,10 @@ svg {
     svg {
     }
   }
+
+  .width-100 {
+    width: 100vw;
+  }
 }
 
 .step {
@@ -167,39 +171,6 @@ svg {
       right: -575px;
     }
   }
-
-  // #ukraine-views--video-blur-1{
-  //   position: absolute;
-  //   top: 928px;
-  //   bottom: -195px;
-  //   left: 0px;
-  //   right: -555px;
-  //   background-color: #ffffff;
-  //   opacity: 1;
-  //   z-index: 1;
-  // }
-
-  // #ukraine-views--video-blur-2{
-  //   position: absolute;
-  //   top: -153px;
-  //   bottom: -75px;
-  //   left: 1644px;
-  //   right: -575px;
-  //   background-color: #ffffff;
-  //   opacity: 1;
-  //   z-index: 1;
-  // }
-
-  // #ukraine-views--video-blur-3{
-  //   position: absolute;
-  //   top: -153px;
-  //   bottom: 942px;
-  //   left: -26px;
-  //   right: -575px;
-  //   background-color: #ffffff;
-  //   opacity: 1;
-  //   z-index: 1;
-  // }
 
   &.present {
     .blur-inactive {

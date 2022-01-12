@@ -91,6 +91,10 @@ svg {
   text-align: left;
   text-transform: uppercase;
 }
+.step .width-100 {
+  width: 100vw;
+}
+
 .step .blur-inactive {
   position: absolute;
   top: 0;
